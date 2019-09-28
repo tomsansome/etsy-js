@@ -1,15 +1,16 @@
 {
-  "name": "etsy-js",
+  "name": "@tomsansome/etsy-js",
   "description": "An asynchronous nodejs wrapper for the etsy v2 api.",
   "version": "0.0.6",
   "main": "./lib/etsyjs",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:GeorgiCodes/etsy-js.git"
+  "repository": "tomsansome/etsy-js",
+  "scripts": {
+    "build": "grunt coffee:compileAll",
+    "release": "np"
   },
-  "scripts": {},
   "dependencies": {
     "coffee-script": "1.7.x",
+    "np": "^5.1.0",
     "oauth": "0.9.x",
     "prettyjson": "1.0.x",
     "request": "2.34.x"

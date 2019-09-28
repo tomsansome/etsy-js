@@ -22,7 +22,7 @@ class Client
     @callbackURL = @options.callbackURL
     @request = request
     @etsyOAuth = new OAuth.OAuth(
-      'https://openapi.etsy.com/v2/oauth/request_token?scope=email_r%20profile_r%20profile_w%20address_r%20address_w',
+      'https://openapi.etsy.com/v2/oauth/request_token?scope=email_r%20profile_r%20listings_r%20listings_w%listings_d',
       'https://openapi.etsy.com/v2/oauth/access_token',
       "#{@apiKey}",
       "#{@apiSecret}",
